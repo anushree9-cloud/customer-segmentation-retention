@@ -1,40 +1,40 @@
-# Project 1 — Customer Segmentation and Retention
 
-Small exploratory project to perform customer segmentation and retention analysis using unsupervised and basic supervised methods. Includes data preprocessing, feature engineering, clustering, and retention/ churn analysis in a single Jupyter notebook.
+# Customer Segmentation & Retention Analysis
 
-## Repository structure
-- project1.ipynb — main analysis notebook (preprocessing, clustering, retention analysis, visualizations)  
-- README.md — this file  
-- requirements.txt — Python dependencies  
-- .gitignore — ignored files
+## Project Overview
+This project focuses on customer segmentation and retention analysis using unsupervised and basic supervised machine learning techniques. The goal is to understand customer behavior, identify high-value and at-risk users, and derive actionable insights to improve customer retention.
 
-## Goals
-- Segment customers based on transactional and behavioral features  
-- Identify high-value and at-risk cohorts  
-- Derive actionable retention recommendations and simple predictive signals
+The entire analysis is implemented in a single Jupyter notebook and follows an end-to-end data science workflow.
 
-## Quick start
-1. Create and activate a virtual environment:
-    - python -m venv .venv
-    - source .venv/bin/activate (macOS/Linux) or .venv\Scripts\activate (Windows)
-2. Install dependencies:
-    - pip install -r requirements.txt
-3. Open the notebook:
-    - jupyter lab  (or jupyter notebook) and open project1.ipynb
+---
 
-## Data
-- No raw data included. Place datasets in a `data/` folder or update paths in the notebook. Expected input: customer transactions and basic customer metadata (IDs, timestamps, amounts, demographics optional).
+## Objectives
+- Segment customers based on behavioral and transactional features
+- Identify high-value and high-churn-risk customer groups
+- Perform exploratory analysis and feature engineering
+- Generate actionable business insights for customer retention
 
-## Notebook highlights
-- Data loading & cleaning  
-- Feature engineering (recency, frequency, monetary, tenure, behavior flags)  
-- Clustering (e.g., KMeans / hierarchical) and cluster profiling  
-- Retention / churn cohort analysis and simple predictive checks  
-- Visualizations and brief recommendations
+---
 
-## Notes
-- Reproducibility depends on data availability and package versions in requirements.txt.  
-- Adjust preprocessing steps and modeling choices to fit your dataset.
+## Methodology
+The project includes the following steps:
 
-## License
-- Add a license file or specify license terms as needed.
+1. Data loading and cleaning
+2. Feature engineering (tenure, frequency, monetary value, behavioral indicators)
+3. Exploratory Data Analysis (EDA)
+4. Customer segmentation using K-Means clustering
+5. Retention and churn analysis
+6. Visualization of customer segments
+7. Business insights and recommendations
+
+---
+
+## Repository Structure
+
+```
+Project 1_ customer segmentation and retention/
+├── README.md
+├── customer_segmentation.ipynb
+└── data/
+    └── customer_data.csv
+```
